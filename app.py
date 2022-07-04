@@ -11,7 +11,7 @@ def hello():
 
 @app.route('/', methods=['POST'])
 def marks():
-    if request.method == 'POST':
+#     if request.method == 'POST':
 
 #         f = request.files['userfile']
 #         print(f)
