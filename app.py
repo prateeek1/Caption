@@ -13,13 +13,13 @@ def hello():
 def marks():
     if request.method == 'POST':
 
-        f = request.files['userfile']
-        print(f)
-        path = "./static/{}".format(f.filename)
-        f.save(path)
+#         f = request.files['userfile']
+#         print(f)
+#         path = "./static/{}".format(f.filename)
+#         f.save(path)
 
-        caption = Caption_it.caption_this_image(path)
-        print(caption)
+#         caption = Caption_it.caption_this_image(path)
+#         print(caption)
 
     return render_template("ind.html", cap=caption)
 
